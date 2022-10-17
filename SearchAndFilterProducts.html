@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search and filter </title>
+    <link rel="stylesheet" href="./SearchAndFilterProducts.css">
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="SearchContainer">
+            <input id="txtSearch" type="search" placeholder="Search Here.....">
+            <button id="btnSearch">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Mobile')">Mobile</button>
+            <button class="button-value" onclick="filterProduct('Headphone')">Headphone</button>
+            <button class="button-value" onclick="filterProduct('Laptop')">Laptop</button>
+            <button class="button-value" onclick="filterProduct('Watch')">Watch</button>
+        </div>
+        <div id="products"></div>
+    </div>
+</body>
+<script src="./SearchAndFilterProducts.js"></script>
+</html>
